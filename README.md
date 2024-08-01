@@ -3,8 +3,10 @@
 1. clone repository
 2. go to the project and run command cp .env.example .env 
 3. make sure that you are connected to your DB
-example
+
 ```
+EXAMPLE
+
 
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -18,8 +20,10 @@ DB_SOCKET=/Applications/MAMP/tmp/mysql/mysql.sock
 4. Once your .env file has been created and your DB is connected
 run php artisan migrate:fresh --seed 
 
-5. Run php artisan serve --port=8000
-your URL would look like ```http://127.0.0.1:8000/api/{apis}```
+5. Run 
+```php artisan serve --port=8000```
+
+Your URL would look like ```http://127.0.0.1:8000/api/{apis}```
 This will be used in frontend
 NOTE: whatever your port is, the important thing is to copy it in the frontend base URL
 
@@ -51,10 +55,10 @@ update client
 http://127.0.0.1:8000/api/{adminId}/update-my-client/{clientId}
 ```
 {
-    "first_name": "Trust",
-    "last_name": "God",
+    "first_name": "Hey",
+    "last_name": "Jude",
     "birthday": "1992-09-13",
-    "contact_no": "+639453311165",
+    "contact_no": "+639453313325",
     "password": "admin123",
     "email": "swuckert@example.org",
     "interest_ids": [5,3,4],
@@ -79,9 +83,6 @@ http://127.0.0.1:8000/api/1/create-my-client
     "interest_ids": [1,6,3]
 }
 ```
-
-
-
 
 admin registration
 http://127.0.0.1:8000/api/register
